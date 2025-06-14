@@ -40,7 +40,10 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/20"
+    >
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -75,13 +78,13 @@ export default function Hero() {
           },
           particles: {
             color: {
-              value: "#38bdf8",
+              value: ["#a855f7", "#3b82f6", "#6366f1"],
             },
             links: {
-              color: "#38bdf8",
+              color: "#a855f7",
               distance: 150,
               enable: true,
-              opacity: 0.3,
+              opacity: 0.4,
               width: 1,
             },
             move: {
@@ -99,16 +102,16 @@ export default function Hero() {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 100,
             },
             opacity: {
-              value: 0.3,
+              value: 0.5,
             },
             shape: {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 3 },
+              value: { min: 1, max: 4 },
             },
           },
           detectRetina: true,
@@ -129,20 +132,23 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Hi, I'm <span className="text-sky-500">Megha Shyam Jallepalli</span>
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              Megha Shyam Jallepalli
+            </span>
           </motion.h1>
 
           <motion.h2
-            className="text-2xl md:text-3xl font-medium mb-6 text-muted-foreground"
+            className="text-2xl md:text-3xl font-medium mb-6 text-slate-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            I'm a <span ref={typedRef} className="text-sky-500"></span>
+            I'm a <span ref={typedRef} className="text-blue-400"></span>
           </motion.h2>
 
           <motion.p
-            className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -156,14 +162,18 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <Button size="lg" className="gap-2 bg-sky-500 hover:bg-sky-600" onClick={scrollToProjects}>
+            <Button
+              size="lg"
+              className="gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0"
+              onClick={scrollToProjects}
+            >
               <FileText className="h-4 w-4" />
               View My Projects
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 border-sky-500 text-sky-500 hover:bg-sky-50"
+              className="gap-2 border-purple-400 text-purple-400 hover:bg-purple-400/10 hover:text-purple-300"
               onClick={openResume}
             >
               <Download className="h-4 w-4" />
@@ -178,7 +188,7 @@ export default function Hero() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full text-sky-500 hover:text-sky-600 hover:bg-sky-50"
+            className="rounded-full text-purple-400 hover:text-purple-300 hover:bg-purple-400/10"
             onClick={() => {
               document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })
             }}

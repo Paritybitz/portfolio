@@ -6,23 +6,20 @@ import Projects from "@/components/projects"
 import Education from "@/components/education"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
-import { ThemeProvider } from "@/components/theme-provider"
 
 export default function Home() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="portfolio-theme">
-      <div className="min-h-screen bg-background text-foreground">
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Education />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen bg-slate-900 text-slate-100">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   )
 }

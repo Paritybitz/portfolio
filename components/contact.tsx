@@ -48,7 +48,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-sky-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-slate-800 via-blue-900/10 to-indigo-900/10">
       <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,9 +57,9 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
-          <div className="w-20 h-1 bg-sky-500 mx-auto mb-6"></div>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-2 text-white">Get In Touch</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto mb-6"></div>
+          <p className="text-slate-400 max-w-2xl mx-auto">
             Have a question or want to work together? Feel free to contact me!
           </p>
         </motion.div>
@@ -71,36 +71,39 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Card className="h-full border-sky-200">
+            <Card className="h-full bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6 h-full flex flex-col">
-                <h3 className="text-xl font-bold mb-4 text-sky-700">Contact Information</h3>
-                <p className="text-muted-foreground mb-6">
+                <h3 className="text-xl font-bold mb-4 text-blue-300">Contact Information</h3>
+                <p className="text-slate-400 mb-6">
                   Feel free to reach out through the contact form or connect with me directly using the information
                   below.
                 </p>
 
                 <div className="space-y-4 flex-grow">
                   <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-sky-500" />
+                    <Mail className="h-5 w-5 text-blue-400" />
                     <div>
-                      <p className="font-medium">Email</p>
-                      <a href="mailto:meghasyam169@gmail.com" className="text-sky-500 hover:underline">
+                      <p className="font-medium text-slate-200">Email</p>
+                      <a
+                        href="mailto:meghasyam169@gmail.com"
+                        className="text-blue-400 hover:text-blue-300 hover:underline"
+                      >
                         meghasyam169@gmail.com
                       </a>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-sky-500" />
+                    <Phone className="h-5 w-5 text-indigo-400" />
                     <div>
-                      <p className="font-medium">Phone</p>
-                      <a href="tel:+919381234098" className="text-sky-500 hover:underline">
+                      <p className="font-medium text-slate-200">Phone</p>
+                      <a href="tel:+919381234098" className="text-indigo-400 hover:text-indigo-300 hover:underline">
                         +91 9381234098
                       </a>
                     </div>
                   </div>
 
                   <div className="pt-6 mt-auto">
-                    <p className="font-medium mb-3">Connect with me</p>
+                    <p className="font-medium mb-3 text-slate-200">Connect with me</p>
                     <div className="flex space-x-4">
                       {socialLinks.map((link, index) => (
                         <motion.a
@@ -108,7 +111,7 @@ export default function Contact() {
                           href={link.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="bg-white hover:bg-sky-500 hover:text-white text-sky-500 rounded-full p-3 transition-colors border border-sky-200"
+                          className="bg-slate-700/50 hover:bg-gradient-to-r hover:from-purple-500 hover:to-blue-500 text-purple-400 hover:text-white rounded-full p-3 transition-all duration-300 border border-slate-600 hover:border-transparent"
                           whileHover={{ y: -5 }}
                           aria-label={link.label}
                         >
@@ -128,9 +131,9 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Card className="border-sky-200">
+            <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-sky-700">Send Me a Message</h3>
+                <h3 className="text-xl font-bold mb-4 text-indigo-300">Send Me a Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <Input
@@ -138,7 +141,7 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="border-sky-200 focus-visible:ring-sky-500"
+                      className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500"
                       required
                     />
                   </div>
@@ -149,7 +152,7 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="border-sky-200 focus-visible:ring-sky-500"
+                      className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500"
                       required
                     />
                   </div>
@@ -160,11 +163,15 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={5}
-                      className="border-sky-200 focus-visible:ring-sky-500"
+                      className="bg-slate-700/50 border-slate-600 text-slate-200 placeholder:text-slate-400 focus:border-indigo-500 focus:ring-indigo-500"
                       required
                     />
                   </div>
-                  <Button type="submit" className="w-full gap-2 bg-sky-500 hover:bg-sky-600" disabled={isSubmitting}>
+                  <Button
+                    type="submit"
+                    className="w-full gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0"
+                    disabled={isSubmitting}
+                  >
                     {isSubmitting ? "Sending..." : "Send Message"}
                     <Send className="h-4 w-4" />
                   </Button>

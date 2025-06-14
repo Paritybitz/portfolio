@@ -10,11 +10,11 @@ export default function Footer() {
   }
 
   return (
-    <footer className="py-8 border-t border-sky-100">
+    <footer className="py-8 border-t border-slate-700 bg-slate-900">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.p
-            className="text-muted-foreground text-sm"
+            className="text-slate-400 text-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -23,12 +23,12 @@ export default function Footer() {
           </motion.p>
 
           <motion.p
-            className="text-muted-foreground text-sm mt-2 md:mt-0"
+            className="text-slate-400 text-sm mt-2 md:mt-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Built with React & Bootstrap
+            Built with React & Next.js
           </motion.p>
 
           <motion.div
@@ -40,7 +40,7 @@ export default function Footer() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full border-sky-200 text-sky-500 hover:bg-sky-50 hover:text-sky-600 hover:border-sky-500"
+              className="rounded-full border-purple-500/50 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300 hover:border-purple-400"
               onClick={scrollToTop}
             >
               <ArrowUp className="h-4 w-4" />

@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { ModeToggle } from "@/components/mode-toggle"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
@@ -47,12 +46,12 @@ export default function Navbar() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-background/90 backdrop-blur-md shadow-md py-2" : "bg-transparent py-4",
+        scrolled ? "bg-slate-900/90 backdrop-blur-md shadow-lg shadow-purple-500/10 py-2" : "bg-transparent py-4",
       )}
     >
       <div className="container flex items-center justify-between">
         <Link href="#home" className="text-xl font-bold">
-          <span className="text-sky-500">Megha</span> <span className="text-foreground">Shyam</span>
+          <span className="text-purple-400">Megha</span> <span className="text-blue-400">Shyam</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -62,8 +61,8 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-sky-500",
-                activeSection === link.href.substring(1) ? "text-sky-500" : "text-muted-foreground",
+                "text-sm font-medium transition-colors hover:text-purple-400",
+                activeSection === link.href.substring(1) ? "text-purple-400" : "text-slate-300",
               )}
               onClick={(e) => {
                 e.preventDefault()
@@ -73,29 +72,27 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <ModeToggle />
         </nav>
 
         {/* Mobile Navigation Toggle */}
-        <div className="flex items-center md:hidden space-x-4">
-          <ModeToggle />
+        <div className="flex items-center md:hidden">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isOpen ? <X className="h-5 w-5 text-purple-400" /> : <Menu className="h-5 w-5 text-purple-400" />}
           </Button>
         </div>
       </div>
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-md shadow-lg py-4">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900/95 backdrop-blur-md shadow-lg py-4">
           <nav className="container flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-sky-500 p-2",
-                  activeSection === link.href.substring(1) ? "text-sky-500" : "text-muted-foreground",
+                  "text-sm font-medium transition-colors hover:text-purple-400 p-2",
+                  activeSection === link.href.substring(1) ? "text-purple-400" : "text-slate-300",
                 )}
                 onClick={(e) => {
                   e.preventDefault()

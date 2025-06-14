@@ -49,7 +49,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-sky-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-slate-800 via-purple-900/10 to-blue-900/10">
       <div className="container px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,9 +58,9 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold mb-2">My Projects</h2>
-          <div className="w-20 h-1 bg-sky-500 mx-auto mb-6"></div>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold mb-2 text-white">My Projects</h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mb-6"></div>
+          <p className="text-slate-400 max-w-2xl mx-auto">
             Explore some of my recent work and personal projects that showcase my skills.
           </p>
         </motion.div>
@@ -74,7 +74,7 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full overflow-hidden group border-sky-200 hover:border-sky-500 transition-colors">
+              <Card className="h-full overflow-hidden group bg-slate-800/50 border-slate-700 hover:border-purple-500/50 transition-all duration-300 backdrop-blur-sm">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={project.image || "/placeholder.svg"}
@@ -82,13 +82,18 @@ export default function Projects() {
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-2 text-sky-700">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <h3 className="text-xl font-bold mb-2 text-purple-300">{project.title}</h3>
+                  <p className="text-slate-400 mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech) => (
-                      <Badge key={tech} variant="secondary" className="bg-sky-100 text-sky-700 hover:bg-sky-200">
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-purple-500/20 text-purple-300 hover:bg-purple-500/30 border border-purple-500/30"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -98,7 +103,7 @@ export default function Projects() {
                   <Button
                     variant="outline"
                     size="sm"
-                    className="gap-2 border-sky-500 text-sky-500 hover:bg-sky-50"
+                    className="gap-2 border-purple-500/50 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300"
                     asChild
                   >
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -106,7 +111,11 @@ export default function Projects() {
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" className="gap-2 bg-sky-500 hover:bg-sky-600" asChild>
+                  <Button
+                    size="sm"
+                    className="gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0"
+                    asChild
+                  >
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4" />
                       Live Demo
