@@ -46,12 +46,12 @@ export default function Navbar() {
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-slate-900/90 backdrop-blur-md shadow-lg shadow-purple-500/10 py-2" : "bg-transparent py-4",
+        scrolled ? "bg-slate-900/90 backdrop-blur-md shadow-lg shadow-blue-500/10 py-2" : "bg-transparent py-4",
       )}
     >
       <div className="container flex items-center justify-between">
         <Link href="#home" className="text-xl font-bold">
-          <span className="text-purple-400">Megha</span> <span className="text-blue-400">Shyam</span>
+          <span className="text-blue-400">Megha</span> <span className="text-sky-400">Shyam</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -61,8 +61,8 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-sm font-medium transition-colors hover:text-purple-400",
-                activeSection === link.href.substring(1) ? "text-purple-400" : "text-slate-300",
+                "text-sm font-medium transition-colors hover:text-blue-400",
+                activeSection === link.href.substring(1) ? "text-blue-400" : "text-slate-300",
               )}
               onClick={(e) => {
                 e.preventDefault()
@@ -77,7 +77,7 @@ export default function Navbar() {
         {/* Mobile Navigation Toggle */}
         <div className="flex items-center md:hidden">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-            {isOpen ? <X className="h-5 w-5 text-purple-400" /> : <Menu className="h-5 w-5 text-purple-400" />}
+            {isOpen ? <X className="h-5 w-5 text-blue-400" /> : <Menu className="h-5 w-5 text-blue-400" />}
           </Button>
         </div>
       </div>
@@ -91,8 +91,8 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-purple-400 p-2",
-                  activeSection === link.href.substring(1) ? "text-purple-400" : "text-slate-300",
+                  "text-sm font-medium transition-colors hover:text-blue-400 p-2",
+                  activeSection === link.href.substring(1) ? "text-blue-400" : "text-slate-300",
                 )}
                 onClick={(e) => {
                   e.preventDefault()

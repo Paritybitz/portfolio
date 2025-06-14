@@ -27,7 +27,7 @@ export default function Skills() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold mb-2 text-white">My Skills</h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-sky-500 to-blue-500 mx-auto mb-6"></div>
           <p className="text-slate-400 max-w-2xl mx-auto">
             Here are the technologies and skills I've acquired throughout my journey.
           </p>
@@ -52,7 +52,7 @@ export default function Skills() {
                     <Progress
                       value={skill.level}
                       className="h-2 bg-slate-700"
-                      indicatorClassName="bg-gradient-to-r from-purple-500 to-blue-500"
+                      indicatorClassName="bg-gradient-to-r from-blue-500 to-sky-500"
                     />
                   </motion.div>
                 ))}

@@ -40,7 +40,7 @@ export default function Footer() {
             <Button
               variant="outline"
               size="icon"
-              className="rounded-full border-purple-500/50 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300 hover:border-purple-400"
+              className="rounded-full border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 hover:border-blue-400"
               onClick={scrollToTop}
             >
               <ArrowUp className="h-4 w-4" />

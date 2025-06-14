@@ -42,7 +42,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900/20 to-blue-900/20"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900/20 to-sky-900/20"
     >
       <Particles
         id="tsparticles"
@@ -78,10 +78,10 @@ export default function Hero() {
           },
           particles: {
             color: {
-              value: ["#a855f7", "#3b82f6", "#6366f1"],
+              value: ["#3b82f6", "#0ea5e9", "#06b6d4"],
             },
             links: {
-              color: "#a855f7",
+              color: "#3b82f6",
               distance: 150,
               enable: true,
               opacity: 0.4,
@@ -133,7 +133,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
               Megha Shyam Jallepalli
             </span>
           </motion.h1>
@@ -144,7 +144,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            I'm a <span ref={typedRef} className="text-blue-400"></span>
+            I'm a <span ref={typedRef} className="text-cyan-400"></span>
           </motion.h2>
 
           <motion.p
@@ -164,7 +164,7 @@ export default function Hero() {
           >
             <Button
               size="lg"
-              className="gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0"
+              className="gap-2 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white border-0"
               onClick={scrollToProjects}
             >
               <FileText className="h-4 w-4" />
@@ -173,7 +173,7 @@ export default function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 border-purple-400 text-purple-400 hover:bg-purple-400/10 hover:text-purple-300"
+              className="gap-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 hover:text-blue-300"
               onClick={openResume}
             >
               <Download className="h-4 w-4" />
@@ -188,7 +188,7 @@ export default function Hero() {
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full text-purple-400 hover:text-purple-300 hover:bg-purple-400/10"
+            className="rounded-full text-blue-400 hover:text-blue-300 hover:bg-blue-400/10"
             onClick={() => {
               document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })
             }}
