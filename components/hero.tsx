@@ -186,26 +186,26 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
           >
-            <Button
-              variant="ghost"
-              size="icon"
-              className="rounded-full text-blue-400 hover:text-blue-300 hover:bg-blue-400/10"
-              asChild
+            <motion.a
+              href="https://linkedin.com/in/alimohsin05"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-700/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 text-blue-400 hover:text-white rounded-full p-3 transition-all duration-300 border border-slate-600 hover:border-transparent"
+              whileHover={{ y: -5 }}
+              aria-label="LinkedIn"
             >
-              <a href="https://linkedin.com/in/ali-mohsin" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="rounded-full text-blue-400 hover:text-blue-300 hover:bg-blue-400/10"
-              asChild
+              <Linkedin className="h-5 w-5" />
+            </motion.a>
+            <motion.a
+              href="https://github.com/Paritybitz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-700/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 text-blue-400 hover:text-white rounded-full p-3 transition-all duration-300 border border-slate-600 hover:border-transparent"
+              whileHover={{ y: -5 }}
+              aria-label="GitHub"
             >
-              <a href="https://github.com/ali-mohsin" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5" />
-              </a>
-            </Button>
+              <Github className="h-5 w-5" />
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>

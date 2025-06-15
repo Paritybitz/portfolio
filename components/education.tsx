@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { GraduationCap, Award, BookOpen } from "lucide-react"
+import { GraduationCap } from "lucide-react"
 
 const education = [
   {
@@ -20,19 +20,6 @@ const education = [
       "Relevant Coursework: Data Structures, Object-Oriented Programming (Python and Java), Low-Level Programming with C, Statistics, Linear Algebra, Formal Computing Methods/Models",
       "Spring 2025: Software Engineering, Databases, OO Design, Systems Programming, Usability and Design",
     ],
-  },
-]
-
-const achievements = [
-  {
-    title: "Dean's List",
-    description: "Recognized for academic excellence with GPA of 3.6/4.0",
-    icon: <Award className="h-6 w-6 text-yellow-400" />,
-  },
-  {
-    title: "Advanced Placement Credits",
-    description: "Earned 46 AP/DE credits, demonstrating strong academic foundation",
-    icon: <BookOpen className="h-6 w-6 text-green-400" />,
   },
 ]
 
@@ -76,9 +63,6 @@ export default function Education() {
                     <div className="text-right">
                       <p className="text-slate-300 font-medium">{edu.duration}</p>
                       <p className="text-blue-400 font-medium">GPA: {edu.gpa}</p>
-                      <span className="inline-block px-2 py-1 bg-yellow-500/20 text-yellow-300 rounded-full text-xs border border-yellow-500/30">
-                        {edu.honors}
-                      </span>
                     </div>
                   </div>
                   <ul className="list-disc pl-5 space-y-2 text-slate-300">
@@ -90,26 +74,6 @@ export default function Education() {
               </Card>
             </motion.div>
           ))}
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid md:grid-cols-2 gap-6"
-          >
-            {achievements.map((achievement, index) => (
-              <Card key={index} className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    {achievement.icon}
-                    <h4 className="text-lg font-bold text-slate-200">{achievement.title}</h4>
-                  </div>
-                  <p className="text-slate-400">{achievement.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </motion.div>
         </div>
       </div>
     </section>

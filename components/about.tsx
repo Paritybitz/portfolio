@@ -48,6 +48,8 @@ export default function About() {
                 </h3>
                 <p className="text-slate-300 mb-6">
                   I'm a Computer Science student at George Mason University with a 3.6 GPA and Dean's List recognition.
+                </p>
+                <p className="text-slate-300 mb-6">
                   My passion lies in artificial intelligence, machine learning, and developing innovative software
                   solutions that make a real-world impact.
                 </p>
@@ -56,23 +58,6 @@ export default function About() {
                   on projects ranging from pose detection systems to financial analysis tools. I'm always eager to learn
                   new technologies and tackle challenging problems.
                 </p>
-                <div className="flex flex-wrap gap-3 mt-6">
-                  <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">
-                    AI/ML Enthusiast
-                  </span>
-                  <span className="px-3 py-1 bg-sky-500/20 text-sky-300 rounded-full text-sm border border-sky-500/30">
-                    Problem Solver
-                  </span>
-                  <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-sm border border-cyan-500/30">
-                    Team Leader
-                  </span>
-                  <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30">
-                    Dean's List
-                  </span>
-                  <span className="px-3 py-1 bg-sky-500/20 text-sky-300 rounded-full text-sm border border-sky-500/30">
-                    Continuous Learner
-                  </span>
-                </div>
               </CardContent>
             </Card>
           </motion.div>
