@@ -17,8 +17,8 @@ const education = [
     icon: <GraduationCap className="h-10 w-10 text-blue-400" />,
     details: [
       "AP/DE Credits: 46",
-      "Relevant Coursework: Data Structures, Object-Oriented Programming (Python and Java), Low-Level Programming with C, Statistics, Linear Algebra, Formal Computing Methods/Models",
-      "Spring 2025: Software Engineering, Databases, OO Design, Systems Programming, Usability and Design",
+      "Relevant Coursework: Data Structures, Object-Oriented Programming (Python and Java), Low-Level Programming with C, Statistics, Linear Algebra, Formal Computing Methods/Models, Software Engineering, Databases, OO Design, Usability and Design",
+      "Fall 2025: Systems Programming, ",
     ],
   },
 ]

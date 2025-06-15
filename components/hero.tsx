@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowDown, Download, FileText, Github, Linkedin } from "lucide-react"
+import { ArrowDown, Github, Linkedin } from "lucide-react"
 import Typed from "typed.js"
 import Particles from "react-particles"
 import { loadSlim } from "tsparticles-slim"
@@ -154,31 +154,6 @@ export default function Hero() {
             Computer Science student at George Mason University with a passion for AI/ML and building innovative
             software solutions.
           </motion.p>
-
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            <Button
-              size="lg"
-              className="gap-2 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white border-0"
-              onClick={scrollToProjects}
-            >
-              <FileText className="h-4 w-4" />
-              View My Projects
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="gap-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 hover:text-blue-300"
-              onClick={openResume}
-            >
-              <Download className="h-4 w-4" />
-              Download Resume
-            </Button>
-          </motion.div>
 
           <motion.div
             className="flex justify-center gap-4"

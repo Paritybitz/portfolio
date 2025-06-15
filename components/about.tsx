@@ -28,9 +28,9 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center md:items-start"
+            className="flex justify-center"
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 mb-8 overflow-hidden rounded-full border-4 border-blue-500 shadow-lg shadow-blue-500/20">
+            <div className="relative w-80 h-[28rem] md:w-96 md:h-[32rem] overflow-hidden rounded-lg border-4 border-blue-500 shadow-lg shadow-blue-500/20">
               <Image src="/images/profile-photo.png" alt="Ali Mohsin" fill className="object-cover" />
             </div>
           </motion.div>
@@ -40,6 +40,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
+            className="flex justify-center"
           >
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6">
