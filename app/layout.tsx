@@ -6,9 +6,10 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Ali Mohsin | AI/ML Engineer & Frontend Developer",
-  description: "Personal portfolio of Ali Mohsin, an aspiring AI/ML Engineer and Frontend Developer",
-    generator: 'v0.dev'
+  title: "Ali Mohsin | AI/ML Engineer & Software Developer",
+  description:
+    "Personal portfolio of Ali Mohsin, Computer Science student at George Mason University specializing in AI/ML and software development",
+  generator: "v0.dev",
 }
 
 export default function RootLayout({

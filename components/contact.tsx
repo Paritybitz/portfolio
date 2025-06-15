@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { useToast } from "@/components/ui/use-toast"
-import { Github, Linkedin, Twitter, Mail, Phone, Send } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, Send } from "lucide-react"
 
 export default function Contact() {
   const { toast } = useToast()
@@ -42,9 +42,8 @@ export default function Contact() {
   }
 
   const socialLinks = [
-    { icon: <Github className="h-5 w-5" />, href: "https://github.com", label: "GitHub" },
-    { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Twitter className="h-5 w-5" />, href: "https://twitter.com", label: "Twitter" },
+    { icon: <Github className="h-5 w-5" />, href: "https://github.com/ali-mohsin", label: "GitHub" },
+    { icon: <Linkedin className="h-5 w-5" />, href: "https://linkedin.com/in/ali-mohsin", label: "LinkedIn" },
   ]
 
   return (
@@ -60,7 +59,7 @@ export default function Contact() {
           <h2 className="text-3xl font-bold mb-2 text-white">Get In Touch</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-sky-500 to-cyan-500 mx-auto mb-6"></div>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to contact me!
+            Have a question or want to collaborate? Feel free to reach out!
           </p>
         </motion.div>
 
@@ -75,8 +74,8 @@ export default function Contact() {
               <CardContent className="p-6 h-full flex flex-col">
                 <h3 className="text-xl font-bold mb-4 text-sky-300">Contact Information</h3>
                 <p className="text-slate-400 mb-6">
-                  Feel free to reach out through the contact form or connect with me directly using the information
-                  below.
+                  I'm always open to discussing new opportunities, collaborations, or just having a chat about
+                  technology and innovation.
                 </p>
 
                 <div className="space-y-4 flex-grow">
@@ -85,10 +84,10 @@ export default function Contact() {
                     <div>
                       <p className="font-medium text-slate-200">Email</p>
                       <a
-                        href="mailto:meghasyam169@gmail.com"
+                        href="mailto:ali.mohsin05@gmail.com"
                         className="text-sky-400 hover:text-sky-300 hover:underline"
                       >
-                        meghasyam169@gmail.com
+                        ali.mohsin05@gmail.com
                       </a>
                     </div>
                   </div>
@@ -96,8 +95,8 @@ export default function Contact() {
                     <Phone className="h-5 w-5 text-cyan-400" />
                     <div>
                       <p className="font-medium text-slate-200">Phone</p>
-                      <a href="tel:+919381234098" className="text-cyan-400 hover:text-cyan-300 hover:underline">
-                        +91 9381234098
+                      <a href="tel:+15712335190" className="text-cyan-400 hover:text-cyan-300 hover:underline">
+                        571.233.5190
                       </a>
                     </div>
                   </div>

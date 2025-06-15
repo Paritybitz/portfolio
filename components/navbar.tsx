@@ -9,8 +9,9 @@ import { cn } from "@/lib/utils"
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
   { name: "Education", href: "#education" },
   { name: "Contact", href: "#contact" },
 ]
@@ -51,7 +52,7 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between">
         <Link href="#home" className="text-xl font-bold">
-          <span className="text-blue-400">Megha</span> <span className="text-sky-400">Shyam</span>
+          <span className="text-blue-400">Ali</span> <span className="text-sky-400">Mohsin</span>
         </Link>
 
         {/* Desktop Navigation */}

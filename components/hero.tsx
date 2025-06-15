@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { ArrowDown, Download, FileText } from "lucide-react"
+import { ArrowDown, Download, FileText, Github, Linkedin } from "lucide-react"
 import Typed from "typed.js"
 import Particles from "react-particles"
 import { loadSlim } from "tsparticles-slim"
@@ -18,7 +18,7 @@ export default function Hero() {
   useEffect(() => {
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, {
-        strings: ["AI/ML Engineer", "Frontend Developer", "Data Scientist"],
+        strings: ["AI/ML Engineer", "Software Developer", "Data Scientist", "Computer Science Student"],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
@@ -36,7 +36,7 @@ export default function Hero() {
   }
 
   const openResume = () => {
-    window.open("https://chatgpt.com/canvas/shared/6834dcd9a7a881919d3548875da8dada", "_blank")
+    window.open("#", "_blank") // Replace with actual resume link
   }
 
   return (
@@ -133,9 +133,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
-              Ali Mohsin
-            </span>
+            <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">Ali Mohsin</span>
           </motion.h1>
 
           <motion.h2
@@ -153,11 +151,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            Building innovative solutions with modern technologies and a passion for AI and machine learning.
+            Computer Science student at George Mason University with a passion for AI/ML and building innovative
+            software solutions.
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -178,6 +177,34 @@ export default function Hero() {
             >
               <Download className="h-4 w-4" />
               Download Resume
+            </Button>
+          </motion.div>
+
+          <motion.div
+            className="flex justify-center gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+          >
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-full text-blue-400 hover:text-blue-300 hover:bg-blue-400/10"
+              asChild
+            >
+              <a href="https://linkedin.com/in/ali-mohsin" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="rounded-full text-blue-400 hover:text-blue-300 hover:bg-blue-400/10"
+              asChild
+            >
+              <a href="https://github.com/ali-mohsin" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
             </Button>
           </motion.div>
         </motion.div>
