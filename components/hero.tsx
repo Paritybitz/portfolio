@@ -18,7 +18,7 @@ export default function Hero() {
   useEffect(() => {
     if (typedRef.current) {
       const typed = new Typed(typedRef.current, {
-        strings: ["AI/ML Engineer", "Frontend Developer", "Backend Developer"],
+        strings: ["AI/ML Engineer", "Frontend Developer", "Data Scientist"],
         typeSpeed: 50,
         backSpeed: 30,
         backDelay: 1500,
@@ -134,7 +134,7 @@ export default function Hero() {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
-              Megha Shyam Jallepalli
+              Ali Mohsin
             </span>
           </motion.h1>
 

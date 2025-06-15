@@ -31,7 +31,7 @@ export default function About() {
             className="flex flex-col items-center md:items-start"
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 mb-8 overflow-hidden rounded-full border-4 border-blue-500 shadow-lg shadow-blue-500/20">
-              <Image src="/images/profile-photo.png" alt="Megha Shyam Jallepalli" fill className="object-cover" />
+              <Image src="/images/profile-photo.png" alt="Ali Mohsin" fill className="object-cover" />
             </div>
           </motion.div>
 
@@ -44,7 +44,7 @@ export default function About() {
             <Card className="bg-slate-800/50 border-slate-700 backdrop-blur-sm">
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-sky-400 bg-clip-text text-transparent">
-                  Megha Shyam Jallepalli
+                  Ali Mohsin
                 </h3>
                 <p className="text-slate-300 mb-6">
                   I am an aspiring AI/ML Engineer and Professional Frontend Developer with a serious, hard-working

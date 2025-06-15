@@ -19,7 +19,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
-            &copy; {new Date().getFullYear()} Megha Shyam Jallepalli. All rights reserved.
+            &copy; {new Date().getFullYear()} Ali Mohsin. All rights reserved.
           </motion.p>
 
           <motion.p
