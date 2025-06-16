@@ -13,23 +13,23 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: '/portfolio/images/smallerlogo.jpg',
+        url: '/portfolio/images/rocket.png',
         sizes: '96x96',
         type: 'image/jpeg',
       },
       {
-        url: '/portfolio/images/smallerlogo.jpg',
+        url: '/portfolio/images/rocket.png',
         sizes: '192x192',
         type: 'image/jpeg',
       },
       {
-        url: '/portfolio/images/smallerlogo.jpg',
+        url: '/portfolio/images/rocket.png',
         sizes: '256x256',
         type: 'image/jpeg',
       }
     ],
-    shortcut: '/portfolio/images/smallerlogo.jpg',
-    apple: '/portfolio/images/smallerlogo.jpg',
+    shortcut: '/portfolio/images/rocket.png',
+    apple: '/portfolio/images/rocket.png',
   },
 }
 
