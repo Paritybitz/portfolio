@@ -10,7 +10,7 @@ const education = [
     institution: "George Mason University",
     degree: "B.S. Applied Computer Science",
     minor: "Minor in Data Science",
-    duration: "Aug 2023 – May 2026",
+    duration: "Aug 2023 – Dec 2026",
     location: "Fairfax, VA",
     gpa: "3.6/4.0",
     honors: "Dean's List",

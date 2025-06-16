@@ -24,7 +24,7 @@ const experiences = [
     company: "Ballogy | FiveRivers Technologies",
     position: "AI/ML Data Science Intern",
     duration: "May 2024 – Aug 2024",
-    location: "Remote",
+    location: "In-Person",
     type: "Internship",
     icon: <Briefcase className="h-6 w-6 text-sky-400" />,
     description: [
