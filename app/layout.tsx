@@ -13,18 +13,18 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: '/portfolio/images/brand.jpg',
+        url: '/portfolio/images/smallerlogo.jpg',
         sizes: '48x48',
         type: 'image/jpeg',
       },
       {
-        url: '/portfolio/images/brand.jpg',
+        url: '/portfolio/images/smallerlogo.jpg',
         sizes: '96x96',
         type: 'image/jpeg',
       }
     ],
-    shortcut: '/portfolio/images/brand.jpg',
-    apple: '/portfolio/images/brand.jpg',
+    shortcut: '/portfolio/images/smallerlogo.jpg',
+    apple: '/portfolio/images/smallerlogo.jpg',
   },
 }
 
