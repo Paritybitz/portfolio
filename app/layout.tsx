@@ -14,12 +14,17 @@ export const metadata = {
     icon: [
       {
         url: '/portfolio/images/smallerlogo.jpg',
-        sizes: '48x48',
+        sizes: '96x96',
         type: 'image/jpeg',
       },
       {
         url: '/portfolio/images/smallerlogo.jpg',
-        sizes: '96x96',
+        sizes: '192x192',
+        type: 'image/jpeg',
+      },
+      {
+        url: '/portfolio/images/smallerlogo.jpg',
+        sizes: '256x256',
         type: 'image/jpeg',
       }
     ],

@@ -51,7 +51,7 @@ export default function Navbar() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <Link href="#home" className="relative w-40 h-12">
+        <Link href="#home" className="relative w-56 h-16">
           <Image
             src="/portfolio/images/smallerlogo.jpg"
             alt="Ali Mohsin Logo"
@@ -68,7 +68,7 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               className={cn(
-                "text-base font-medium transition-colors hover:text-blue-400",
+                "text-lg font-medium transition-colors hover:text-blue-400",
                 activeSection === link.href.substring(1) ? "text-blue-400" : "text-slate-300",
               )}
               onClick={(e) => {
@@ -84,7 +84,7 @@ export default function Navbar() {
         {/* Mobile Navigation Toggle */}
         <div className="flex items-center md:hidden">
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-            {isOpen ? <X className="h-6 w-6 text-blue-400" /> : <Menu className="h-6 w-6 text-blue-400" />}
+            {isOpen ? <X className="h-8 w-8 text-blue-400" /> : <Menu className="h-8 w-8 text-blue-400" />}
           </Button>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 className={cn(
-                  "text-base font-medium transition-colors hover:text-blue-400 p-2",
+                  "text-lg font-medium transition-colors hover:text-blue-400 p-2",
                   activeSection === link.href.substring(1) ? "text-blue-400" : "text-slate-300",
                 )}
                 onClick={(e) => {
