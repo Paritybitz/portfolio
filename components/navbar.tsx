@@ -53,7 +53,7 @@ export default function Navbar() {
       <div className="container flex items-center justify-between">
         <Link href="#home" className="relative w-32 h-8">
           <Image
-            src="/portfolio/images/logo.png"
+            src="/portfolio/images/logo.jpg"
             alt="Ali Mohsin Logo"
             fill
             className="object-contain"
