@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -50,8 +51,14 @@ export default function Navbar() {
       )}
     >
       <div className="container flex items-center justify-between">
-        <Link href="#home" className="text-xl font-bold">
-          <span className="text-blue-400">Ali</span> <span className="text-sky-400">Mohsin</span>
+        <Link href="#home" className="relative w-32 h-8">
+          <Image
+            src="/portfolio/images/logo.png"
+            alt="Ali Mohsin Logo"
+            fill
+            className="object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
