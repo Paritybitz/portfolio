@@ -11,7 +11,18 @@ export const metadata = {
     "Personal portfolio of Ali Mohsin, Computer Science student at George Mason University specializing in AI/ML and software development",
   generator: "v0.dev",
   icons: {
-    icon: '/portfolio/images/brand.jpg',
+    icon: [
+      {
+        url: '/portfolio/images/brand.jpg',
+        sizes: '48x48',
+        type: 'image/jpeg',
+      },
+      {
+        url: '/portfolio/images/brand.jpg',
+        sizes: '96x96',
+        type: 'image/jpeg',
+      }
+    ],
     shortcut: '/portfolio/images/brand.jpg',
     apple: '/portfolio/images/brand.jpg',
   },
