@@ -31,7 +31,7 @@ export default function About() {
             className="flex justify-center"
           >
             <div className="relative w-80 h-[28rem] md:w-96 md:h-[32rem] overflow-hidden rounded-lg border-4 border-blue-500 shadow-lg shadow-blue-500/20">
-              <Image src="/images/profile-photo.png" alt="Ali Mohsin" fill className="object-cover" />
+              <Image src="/portfolio/images/profile-photo.png" alt="Ali Mohsin" fill className="object-cover" />
             </div>
           </motion.div>
 
