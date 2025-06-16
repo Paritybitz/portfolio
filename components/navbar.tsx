@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { Menu, X, FileDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
@@ -62,24 +62,34 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className={cn(
-                "text-lg font-medium transition-colors hover:text-blue-400",
-                activeSection === link.href.substring(1) ? "text-blue-400" : "text-slate-300",
-              )}
-              onClick={(e) => {
-                e.preventDefault()
-                document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" })
-              }}
-            >
-              {link.name}
-            </Link>
-          ))}
-        </nav>
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={cn(
+                  "text-lg font-medium transition-colors hover:text-blue-400",
+                  activeSection === link.href.substring(1) ? "text-blue-400" : "text-slate-300",
+                )}
+                onClick={(e) => {
+                  e.preventDefault()
+                  document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" })
+                }}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+          <a
+            href="/AliMohsin.pdf"
+            download
+            className="bg-slate-700/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 text-blue-400 hover:text-white rounded-full p-3 transition-all duration-300 border border-slate-600 hover:border-transparent flex items-center gap-2"
+          >
+            <FileDown className="h-5 w-5" />
+            <span>Resume</span>
+          </a>
+        </div>
 
         {/* Mobile Navigation Toggle */}
         <div className="flex items-center md:hidden">
@@ -110,6 +120,14 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+            <a
+              href="/AliMohsin.pdf"
+              download
+              className="text-lg font-medium transition-colors hover:text-blue-400 p-2 flex items-center gap-2"
+            >
+              <FileDown className="h-5 w-5" />
+              <span>Resume</span>
+            </a>
           </nav>
         </div>
       )}
