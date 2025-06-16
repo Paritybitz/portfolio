@@ -13,6 +13,7 @@ const nextConfig = {
     unoptimized: true,
   },
 
+  assetPrefix: '/portfolio',
   basePath: '/portfolio',
 
   distDir: 'dist',
