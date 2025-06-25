@@ -100,9 +100,9 @@ export default function Experience() {
                         <Image
                           src={exp.logo}
                           alt={`${exp.company} logo`}
-                          width={53}
-                          height={53}
-                          className="w-[53px] h-[53px] object-contain"
+                          width={56}
+                          height={56}
+                          className="w-[56px] h-[56px] object-contain rounded-lg"
                         />
                       </div>
                       <div>
