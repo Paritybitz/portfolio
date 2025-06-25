@@ -12,7 +12,7 @@ const experiences = [
     duration: "May 2025 – Aug 2025",
     location: "Hybrid",
     type: "Internship",
-    logo: "/images/NDi.jpg",
+    logo: "/portfolio/images/NDi.jpg",
     description: [
       "In Progress...",
     ],
@@ -24,7 +24,7 @@ const experiences = [
     duration: "Oct 2024 – Mar 2025",
     location: "In-Person",
     type: "Leadership",
-    logo: "/images/hackfax.jpg",
+    logo: "/portfolio/images/hackfax.jpg",
     description: [
       "Leading a team of 5 to develop and optimize the coding section for a large-scale hackathon",
       "Leveraging collaborative tools to ensure seamless execution and enhance participant experience",
@@ -38,7 +38,7 @@ const experiences = [
     duration: "May 2024 – Aug 2024",
     location: "In-Person",
     type: "Internship",
-    logo: "/images/ballogy.jpg",
+    logo: "/portfolio/images/ballogy.jpg",
     description: [
       "Collaborated with a team using Agile methodologies to develop an AI-driven basketball training platform",
       "Delivered real-time insights to 100+ coaches and dozens of schools nationwide, enhancing performance tracking for 15,000+ athletes",
@@ -55,7 +55,7 @@ const experiences = [
     duration: "Jan 2024 – May 2024",
     location: "In-Person",
     type: "Teaching",
-    logo: "/public/images/gmu.jpg",
+    logo: "/portfolio/images/gmu.jpg",
     description: [
       "Led interactive learning sessions for 50+ students in Python programming",
       "Reinforced core programming concepts through one-on-one mentorship and workshops",
