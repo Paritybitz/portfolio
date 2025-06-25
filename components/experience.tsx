@@ -55,7 +55,7 @@ const experiences = [
     duration: "Jan 2024 – May 2024",
     location: "In-Person",
     type: "Teaching",
-    logo: "/images/gmu.jpg",
+    logo: "/public/images/gmu.jpg",
     description: [
       "Led interactive learning sessions for 50+ students in Python programming",
       "Reinforced core programming concepts through one-on-one mentorship and workshops",
