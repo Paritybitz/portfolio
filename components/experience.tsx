@@ -15,6 +15,10 @@ const experiences = [
     logo: "/portfolio/images/NDi.jpg",
     description: [
       "In Progress...",
+      "React Native, Firebase, CRMs (Strapi)",
+      "Bubble",
+      "AutoCAD",
+      "etc..."
     ],
   },
   {
