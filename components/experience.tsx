@@ -23,6 +23,22 @@ const experiences = [
   },
   {
     id: 2,
+    company: "Network Designs Inc.",
+    position: "AI/ML Developer",
+    duration: "May 2025 – Aug 2025",
+    location: "Hybrid",
+    type: "Internship",
+    logo: "/portfolio/images/NDi.jpg",
+    description: [
+      "In Progress...",
+      "React Native, Firebase, CRMs (Strapi)",
+      "Bubble",
+      "AutoCAD",
+      "etc..."
+    ],
+  },
+  {
+    id: 3,
     company: "George Mason University",
     position: "Hackathon Software Developer",
     duration: "Oct 2024 – Mar 2025",
@@ -36,7 +52,7 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: "Ballogy | FiveRivers Technologies",
     position: "AI/ML Data Science Intern",
     duration: "May 2024 – Aug 2024",
@@ -53,7 +69,7 @@ const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: "George Mason University",
     position: "Teaching Assistant",
     duration: "Jan 2024 – May 2024",
