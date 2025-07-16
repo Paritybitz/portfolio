@@ -33,6 +33,26 @@ const experiences = [
       "Bubble",
       "AutoCAD",
       "etc..."
+      "React Native, Firebase, CRMs (Strapi)",
+      "Bubble",
+      "AutoCAD",
+      "etc..."
+    ],
+  },
+  {
+    id: 3,
+    company: "Network Designs Inc.",
+    position: "AI/ML Developer",
+    duration: "May 2025 – Aug 2025",
+    location: "Hybrid",
+    type: "Internship",
+    logo: "/portfolio/images/NDi.jpg",
+    description: [
+      "In Progress...",
+      "React Native, Firebase, CRMs (Strapi)",
+      "Bubble",
+      "AutoCAD",
+      "etc..."
     ],
   },
   {
