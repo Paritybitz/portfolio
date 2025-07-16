@@ -29,7 +29,7 @@ const experiences = [
     logo: "/portfolio/images/NDi.jpg",
     description: [
       "In Progress...",
-      "React Native, Firebase, CRMs (Strapi)",
+      "React Native, Firebase, CMS (Strapi), PostgreSQL",
       "Bubble",
       "AutoCAD",
       "etc..."
