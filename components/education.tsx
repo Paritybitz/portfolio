@@ -16,9 +16,8 @@ const education = [
     honors: "Dean's List",
     icon: <GraduationCap className="h-10 w-10 text-blue-400" />,
     details: [
-      "AP/DE Credits: 46",
-      "Relevant Coursework: Data Structures, Object-Oriented Programming (Python and Java), Low-Level Programming with C, Statistics, Linear Algebra, Formal Computing Methods/Models, Software Engineering, Databases, OO Design, Usability and Design",
-      "Fall 2025: Systems Programming, ",
+      "Relevant Coursework: (AP/DE Credits: 46), Data Structures, OO, (Python and Java), Low-Level Programming with C, Statistics, Linear Algebra, Formal Methods/Models, Software Engineering, Software Design",
+      "Fall 2025: Systems Programming, Algorithms, Databases, Software Testing and Maintenance, Web App Development",
     ],
   },
 ]
