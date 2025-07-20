@@ -8,6 +8,14 @@ import { Brain, Search, Gamepad2 } from "lucide-react"
 const projects = [
 	{
 		id: 1,
+		title: "Native Financial Analyst",
+		description:
+			"React Native (Expo) financial analysis system using Alpha Vantage API for live market data, Node.js handling data aggregation, FastAPI for technical analysis and report generation, delivering real-time investment recommendations with technical indicators, sentiment analysis, and NodeCache caching for low-latency performance.",
+		icon: <Brain className="h-8 w-8 text-green-400" />,
+		tech: ["React Native", "Expo", "Node.js", "FastAPI", "Alpha Vantage API", "NodeCache"],
+	},
+	{
+		id: 2,
 		title: "BEIGHT Workout App",
 		description:
 			"AI-powered body-weight workout app utilizing computer vision to track posture and count reps in real time, achieving 95% accuracy in tracking key body landmarks.",
@@ -15,15 +23,15 @@ const projects = [
 		tech: ["React Native", "Python", "OpenCV", "MediaPipe", "NumPy", "PostgreSQL"],
 	},
 	{
-		id: 2,
-		title: "Financial Sentiment Analysis",
+		id: 3,
+		title: "StartHub",
 		description:
-			"Fine-tuned Llama 3.1 model to classify financial news by sentiment, optimizing for market prediction insights with interactive web interface.",
-		icon: <Brain className="h-8 w-8 text-sky-400" />,
-		tech: ["Llama 3.1", "Streamlit", "Python", "NLP", "Machine Learning"],
+			"Project and Startup Collaboration Platform targeted for young startup enthusiasts and college students.",
+		icon: <Brain className="h-8 w-8 text-blue-400" />,
+		tech: ["React", "Node.js", "MongoDB", "Express"],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "PDF Semantic Search Engine",
 		description:
 			"Deployed a semantic search engine for PDF retrieval enabling fast text similarity searches across 1,000+ documents using advanced embeddings.",
@@ -31,20 +39,20 @@ const projects = [
 		tech: ["Python", "LangChain", "FAISS", "SentenceTransformers", "Vector Database"],
 	},
 	{
-		id: 4,
+		id: 5,
+		title: "Financial Sentiment Analysis",
+		description:
+			"Fine-tuned Llama 3.1 model to classify financial news by sentiment, optimizing for market prediction insights with interactive web interface.",
+		icon: <Brain className="h-8 w-8 text-sky-400" />,
+		tech: ["Llama 3.1", "Streamlit", "Python", "NLP", "Machine Learning"],
+	},
+	{
+		id: 6,
 		title: "Blob Game",
 		description:
 			"Interactive Java arcade game with GUI, featuring keyboard controls, dynamic difficulty, real-time collision detection, and visual feedback.",
 		icon: <Gamepad2 className="h-8 w-8 text-indigo-400" />,
 		tech: ["Java", "Swing", "Game Development", "GUI", "Object-Oriented Programming"],
-	},
-	{
-		id: 5,
-		title: "StartHub",
-		description:
-			"Project and Startup Collaboration Platform targeted for young startup enthusiasts and college students.",
-		icon: <Brain className="h-8 w-8 text-blue-400" />,
-		tech: ["React", "Node.js", "MongoDB", "Express"],
 	},
 ]
 
