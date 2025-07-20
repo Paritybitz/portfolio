@@ -30,7 +30,7 @@ const skillCategories = [
   {
     title: "Frameworks & Libraries",
     icon: <Smartphone className="h-6 w-6 text-cyan-400" />,
-    skills: ["React Native", "Flutter", "Streamlit", "Swing", "SentenceTransformers", "Pillow", "Ultralytics"],
+    skills: ["React Native", "Flutter", "React", "Next.js", "Streamlit", "JavaFX", "SentenceTransformers", "Pillow", "Ultralytics"],
   },
   {
     title: "Databases & Cloud",

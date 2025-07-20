@@ -2,17 +2,47 @@
 
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
-import { Briefcase, Code, GraduationCap } from "lucide-react"
+import Image from "next/image"
 
 const experiences = [
   {
     id: 1,
+    company: "Pre-Health Guidance Association",
+    position: "Cheif Technology Officer",
+    duration: "June 2025 – Present",
+    location: "In-Person",
+    type: "Leadership",
+    logo: "/portfolio/images/phg.jpg",
+    description: [
+      "Website",
+      "Social Media Managment",
+      "etc..."
+    ],
+  },
+  {
+    id: 2,
+    company: "Network Designs Inc.",
+    position: "AI/ML Developer",
+    duration: "May 2025 – Aug 2025",
+    location: "Hybrid",
+    type: "Internship",
+    logo: "/portfolio/images/NDi.jpg",
+    description: [
+      "In Progress...",
+      "React Native, Firebase, CMS (Strapi), PostgreSQL",
+      "Bubble",
+      "AutoCAD",
+      "etc..."
+    ],
+  },
+  {
+    id: 3,
     company: "George Mason University",
     position: "Hackathon Software Developer",
     duration: "Oct 2024 – Mar 2025",
-    location: "Fairfax, VA",
+    location: "In-Person",
     type: "Leadership",
-    icon: <Code className="h-6 w-6 text-blue-400" />,
+    logo: "/portfolio/images/hackfax.jpg",
     description: [
       "Leading a team of 5 to develop and optimize the coding section for a large-scale hackathon",
       "Leveraging collaborative tools to ensure seamless execution and enhance participant experience",
@@ -20,13 +50,13 @@ const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     company: "Ballogy | FiveRivers Technologies",
     position: "AI/ML Data Science Intern",
     duration: "May 2024 – Aug 2024",
     location: "In-Person",
     type: "Internship",
-    icon: <Briefcase className="h-6 w-6 text-sky-400" />,
+    logo: "/portfolio/images/ballogy.jpg",
     description: [
       "Collaborated with a team using Agile methodologies to develop an AI-driven basketball training platform",
       "Delivered real-time insights to 100+ coaches and dozens of schools nationwide, enhancing performance tracking for 15,000+ athletes",
@@ -37,13 +67,13 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     company: "George Mason University",
     position: "Teaching Assistant",
     duration: "Jan 2024 – May 2024",
-    location: "Fairfax, VA",
+    location: "In-Person",
     type: "Teaching",
-    icon: <GraduationCap className="h-6 w-6 text-cyan-400" />,
+    logo: "/portfolio/images/gmu.jpg",
     description: [
       "Led interactive learning sessions for 50+ students in Python programming",
       "Reinforced core programming concepts through one-on-one mentorship and workshops",
@@ -84,7 +114,15 @@ export default function Experience() {
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-start gap-4 mb-4">
                     <div className="flex items-center gap-3 flex-1">
-                      <div className="hidden sm:block">{exp.icon}</div>
+                      <div className="hidden sm:block">
+                        <Image
+                          src={exp.logo}
+                          alt={`${exp.company} logo`}
+                          width={56}
+                          height={56}
+                          className="w-[56px] h-[56px] object-contain rounded-lg"
+                        />
+                      </div>
                       <div>
                         <h3 className="text-xl font-bold text-blue-300">{exp.position}</h3>
                         <p className="text-sky-400 font-medium">{exp.company}</p>
