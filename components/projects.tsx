@@ -8,7 +8,7 @@ import { Brain, Search, Gamepad2 } from "lucide-react"
 const projects = [
 	{
 		id: 1,
-		title: "Stock Recommender",
+		title: "Stock Guru",
 		description:
 			"React Native (Expo) financial analysis system using Alpha Vantage API for live market data, Node.js handling data aggregation, FastAPI for technical analysis and report generation, delivering real-time investment recommendations with technical indicators, sentiment analysis, and NodeCache caching for low-latency performance.",
 		icon: <Brain className="h-8 w-8 text-green-400" />,
