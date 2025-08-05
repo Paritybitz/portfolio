@@ -5,8 +5,22 @@ import { Card, CardContent } from "@/components/ui/card"
 import Image from "next/image"
 
 const experiences = [
-  {
+    {
     id: 1,
+    company: "GMU CS Club",
+    position: "Full-Stack Engineer",
+    duration: "July 2025 – Present",
+    location: "In-Person",
+    type: "Leadership",
+    logo: "/portfolio/images/phg.jpg",
+    description: [
+      "Website",
+      "Social Media Managment",
+      "etc..."
+    ],
+  },
+  {
+    id: 2,
     company: "Pre-Health Guidance Association",
     position: "Cheif Technology Officer",
     duration: "June 2025 – Present",
@@ -20,7 +34,7 @@ const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "Network Designs Inc.",
     position: "AI/ML Developer",
     duration: "May 2025 – Aug 2025",
@@ -36,7 +50,7 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: "George Mason University",
     position: "Hackathon Software Developer",
     duration: "Oct 2024 – Mar 2025",
@@ -50,7 +64,7 @@ const experiences = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: "Ballogy | FiveRivers Technologies",
     position: "AI/ML Data Science Intern",
     duration: "May 2024 – Aug 2024",
@@ -67,7 +81,7 @@ const experiences = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     company: "George Mason University",
     position: "Teaching Assistant",
     duration: "Jan 2024 – May 2024",
