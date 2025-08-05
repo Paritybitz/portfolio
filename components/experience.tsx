@@ -12,7 +12,7 @@ const experiences = [
     duration: "July 2025 – Present",
     location: "In-Person",
     type: "Leadership",
-    logo: "/portfolio/images/phg.jpg",
+    logo: "/portfolio/images/csclub.jpg",
     description: [
       "Website",
       "Social Media Managment",
@@ -42,11 +42,9 @@ const experiences = [
     type: "Internship",
     logo: "/portfolio/images/NDi.jpg",
     description: [
-      "In Progress...",
-      "React Native, Firebase, CMS (Strapi), PostgreSQL",
-      "Bubble",
-      "AutoCAD",
-      "etc..."
+      "Collaborated with cross-functional teams using Agile methodologies to architect enterprise mobile application, delivering AI-powered HR assistant and real-time content management to 500+ internal users across iOS and Android platforms.",
+      "Engineered headless Strapi CMS on Strapi Cloud with PostgreSQL backend, built automated JSON-driven content ingestion pipelines with batch processing, developed REST APIs with role-based permissions, integrated Azure AD SSO and Firebase Messaging for React Native delivery, reducing management overhead by 60%.",
+      "Architected code modernization platform using FastAPI, LangChain, OpenAI API, implementing retrieval system with Qdrant vector database and Tree-sitter multi-language parsing; enabled automated generation of user stories, unit tests, microservice templates, reducing analysis time by 80%."
     ],
   },
   {
