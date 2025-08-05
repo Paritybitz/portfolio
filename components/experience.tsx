@@ -41,11 +41,16 @@ const experiences = [
     location: "Hybrid",
     type: "Internship",
     logo: "/portfolio/images/NDi.jpg",
-    description: [
-      "Collaborated with cross-functional teams using Agile methodologies to architect enterprise mobile application, delivering AI-powered HR assistant and real-time content management to 500+ internal users across iOS and Android platforms.",
-      "Engineered headless Strapi CMS on Strapi Cloud with PostgreSQL backend, built automated JSON-driven content ingestion pipelines with batch processing, developed REST APIs with role-based permissions, integrated Azure AD SSO and Firebase Messaging for React Native delivery, reducing management overhead by 60%.",
-      "Architected code modernization platform using FastAPI, LangChain, OpenAI API, implementing retrieval system with Qdrant vector database and Tree-sitter multi-language parsing; enabled automated generation of user stories, unit tests, microservice templates, reducing analysis time by 80%."
-    ],
+         description: [
+       "Collaborated with cross-functional teams using Agile methodologies to architect enterprise mobile application",
+       "Delivered AI-powered HR assistant and real-time content management to 500+ internal users across iOS and Android platforms",
+       "Engineered headless Strapi CMS on Strapi Cloud with PostgreSQL backend and automated JSON-driven content ingestion pipelines",
+       "Built REST APIs with role-based permissions and integrated Azure AD SSO for secure authentication",
+       "Implemented Firebase Messaging for React Native delivery, reducing management overhead by 60%",
+       "Architected code modernization platform using FastAPI, LangChain, and OpenAI API with retrieval system",
+       "Deployed Qdrant vector database and Tree-sitter multi-language parsing for automated code analysis",
+       "Enabled automated generation of user stories, unit tests, and microservice templates, reducing analysis time by 80%"
+     ],
   },
   {
     id: 4,
