@@ -16,9 +16,6 @@ export default function Resume() {
         >
           <h2 className="text-3xl font-bold mb-2 text-white">Resume</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-sky-500 mx-auto mb-6"></div>
-          <p className="text-slate-400 max-w-2xl mx-auto">
-            View my complete professional resume with all my experience and qualifications.
-          </p>
         </motion.div>
 
         <motion.div
@@ -37,7 +34,7 @@ export default function Resume() {
               {/* Resume image */}
               <div className="relative w-full aspect-[8.5/11] overflow-hidden rounded-2xl shadow-lg">
                 <Image 
-                  src="/images/resume.jpg" 
+                  src="/portfolio/images/resume.jpg" 
                   alt="Ali Mohsin Resume" 
                   fill 
                   className="object-contain bg-white"
