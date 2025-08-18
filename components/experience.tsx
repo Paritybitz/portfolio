@@ -22,15 +22,15 @@ const experiences = [
   {
     id: 2,
     company: "Pre-Health Guidance Association",
-    position: "Cheif Technology Officer",
+    position: "Chief Technology Officer",
     duration: "June 2025 – Present",
     location: "In-Person",
     type: "Leadership",
     logo: "/portfolio/images/phg.jpg",
     description: [
-      "Website",
-      "Social Media Managment",
-      "etc..."
+      "Led UI/UX design and digital strategy as CTO, creating intuitive user experiences and modern interfaces serving 500+ students",
+      "Developed PHG Association website using Next.js, React 19, TypeScript, Tailwind CSS with automated CI/CD deployment",
+      "Visit here: https://phg-association.github.io/phg-app/"
     ],
   },
   {
@@ -155,7 +155,23 @@ export default function Experience() {
                   </div>
                   <ul className="list-disc pl-5 space-y-2 text-slate-300">
                     {exp.description.map((item, i) => (
-                      <li key={i}>{item}</li>
+                      <li key={i}>
+                        {item.includes('Visit here:') ? (
+                          <>
+                            {item.split('Visit here:')[0]}
+                            <a 
+                              href={item.split('Visit here:')[1].trim()} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-blue-400 hover:text-blue-300 underline ml-1"
+                            >
+                              Visit here
+                            </a>
+                          </>
+                        ) : (
+                          item
+                        )}
+                      </li>
                     ))}
                   </ul>
                 </CardContent>
