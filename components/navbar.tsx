@@ -121,7 +121,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="/Ali Mohsin.pdf"
+              href="/AliMohsin.pdf"
               download
               className="text-lg font-medium transition-colors hover:text-blue-400 p-2 flex items-center gap-2"
             >
