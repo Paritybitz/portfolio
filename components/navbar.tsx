@@ -82,7 +82,7 @@ export default function Navbar() {
             ))}
           </nav>
           <a
-            href="C:/Users/alimo/Documents/portfolio/public/AliMohsin.pdf"
+            href="/AliMohsin.pdf"
             download
             className="bg-slate-700/50 hover:bg-gradient-to-r hover:from-blue-500 hover:to-sky-500 text-blue-400 hover:text-white rounded-full p-3 transition-all duration-300 border border-slate-600 hover:border-transparent flex items-center gap-2"
           >
@@ -121,7 +121,7 @@ export default function Navbar() {
               </Link>
             ))}
             <a
-              href="C:/Users/alimo/Documents/portfolio/public/AliMohsin.pdf"
+              href="/Ali Mohsin.pdf"
               download
               className="text-lg font-medium transition-colors hover:text-blue-400 p-2 flex items-center gap-2"
             >
