@@ -37,7 +37,7 @@ export default function Resume() {
               {/* Resume image */}
               <div className="relative w-full aspect-[8.5/11] overflow-hidden rounded-2xl shadow-lg">
                 <Image 
-                  src="/images/resume.png" 
+                  src="/images/resume.jpg" 
                   alt="Ali Mohsin Resume" 
                   fill 
                   className="object-contain bg-white"
@@ -52,25 +52,7 @@ export default function Resume() {
               <div className="absolute bottom-2 right-2 w-6 h-6 border-r-2 border-b-2 border-blue-400/40 rounded-br-lg"></div>
             </div>
 
-            {/* Download button */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="flex justify-center mt-8"
-            >
-              <a
-                href="/AliMohsin.pdf"
-                download="Ali_Mohsin_Resume.pdf"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                Download Resume
-              </a>
-            </motion.div>
+
           </div>
         </motion.div>
       </div>
